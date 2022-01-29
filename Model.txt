@@ -1,0 +1,75 @@
+  {/*Heading--> ##Photography## */}
+        {/* #Nature Photography */}
+        {/* Food Photography */}
+        {/* People photography */}
+        {/* Places Photography */}
+        {/* Animals Photography */}
+        {/* Birds Photography */}
+
+
+        {/* Recommended For You */}
+            {/* Wallpapers */}
+            *****************About web*************
+            This is the high quality platform to use commercially and for building websites with best background images. It is also free and secure and easy to use.
+
+<p className='describe'>The camera is and instrument which teaches people how to see without camera.</p>
+  <p className='describe'>Alluring venues are many but the time is so short.</p>
+   <p className='describe'>Follow the way in which food nourishes you.</p>
+              <p className='describe'>Keep you love of nature with your beautiful smile.</p>
+               <p className='describe'>Adopt the pace of universe. His secret is patience</p>
+  <p className='describe'>Let your wings to fly over the thunderstorm.</p>
+   <p className='describe'>Instead of finding yourself, create yourself</p>
+
+
+    <input type="text"  value={photo}  onChange={handleChange} id="NoId" />
+  <button onClick={handleSubmit} type='submit'>Search</button>
+  const [photo, setPhoto] = useState('')
+const handleChange=(e)=>{
+setPhoto(e.target.value)
+
+}
+const handleSubmit=()=>{
+  console.log(photo)
+}
+
+
+
+  const [photo, setPhoto] = useState('')
+  const [result, setResult] = useState([])
+const handleChange=(e)=>{
+setPhoto(e.target.value)
+
+}
+const handleSubmit=()=>{
+  console.log(photo)
+  const url="https://api.unsplash.com/photos/?client_id=18FHU4CKJ8ZctoM1KvguURmGZD5zkUnrFmQibcZdIhs"
+  axios.get(url)
+  .then((response)=>{
+    console.log(response)
+    setResult(response.data.results)
+    console.log(setResult)
+  })
+  
+}
+
+
+PEXELS API KEY**************
+563492ad6f9170000100000118d10c77a96b478eab834195f0df2770
+  
+
+  PIXABAY API KEY***************************
+  25267348-c36a34f97a107c717d263c470
+
+
+
+
+
+
+*******************************************  FULL CODE HERE*************************************************
+,{useState,useEffect,useRef}
+
+ 
+
+ 
+     
+   
