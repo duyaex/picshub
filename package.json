@@ -17,6 +17,7 @@
         "lodash": "^4.17.21",
         "lottie-react-native": "^5.0.1",
         "mediaquery": "^0.0.4",
+        "node": "^17.4.0",
         "nodemon": "^2.0.15",
         "path": "^0.12.7",
         "pixabay-api": "^1.0.4",
@@ -43,7 +44,7 @@
         "both": "concurrently \"npm run start\" \"nodemon backened/index\"",
         "deploy": "gh-pages -d build",
         "predeploy": "npm run build",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install startup && npm run build"
     },
     "eslintConfig": {
         "extends": [
